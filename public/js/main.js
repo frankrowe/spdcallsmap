@@ -10,6 +10,7 @@ CallsMap.prototype.init = function() {
   var self = this
 
   this.map = new L.Map('map').setView(new L.LatLng(38.35, -75.6), 12)
+  this.map.attributionControl.addAttribution('Call Data: <a href="http://www.salisburypd.com/daily-calls-for-service.aspx">SPD</a>')
 
   this.selectedColor = 'rgba(255, 120, 0, 0.7)'
 
