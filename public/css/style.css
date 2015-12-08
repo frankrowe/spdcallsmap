@@ -93,3 +93,17 @@ table.popup td:first-child {
   color: #333;
   font-weight: bold;
 }
+
+#showCalendar {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  display: none;
+  box-sizing: border-box;
+  margin: 0;
+  height: 2.1em;
+  padding: 0 .6em;
+  font-size: 1em;
+  white-space: nowrap;
+  cursor: pointer;
+}

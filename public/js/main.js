@@ -123,8 +123,19 @@ CallsMap.prototype.makeCalendar = function() {
     }
   })
 
+  $('.fc-today-button').hide()
   var selector = firstDate.format('YYYY-MM-DD')
   $('td.fc-day[data-date="' + selector + '"]').css('background-color', self.selectedColor)
+  var button = $('<button type="button" class="fc-button fc-state-default fc-corner-left fc-corner-right">Hide Calendar</button>')
+  button.on('click', function(e) {
+    $('#calendar').hide()
+    $('#showCalendar').show()
+  })
+  $('.fc-right').prepend(button)
+  $('#showCalendar').click(function() {
+    $(this).hide()
+    $('#calendar').show()
+  })
 
 }
 
